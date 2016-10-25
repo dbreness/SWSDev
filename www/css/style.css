@@ -1,0 +1,27 @@
+.go-wait{
+  font-size: 45px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.img-size{
+  height: 90px;
+  width: 90px;
+}
+
+.col-15{
+  -moz-box-flex: 0;
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+.col-30{
+  -moz-box-flex: 0;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.row-wait{
+  width: auto;
+}

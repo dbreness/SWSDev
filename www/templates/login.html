@@ -1,0 +1,29 @@
+<ion-view view-title="{{currentStation}}">
+  <ion-content class="has-header padding">
+    <div class="row">
+      <div class="col">
+        <div class="text-center">
+          <img width="40%" src="img/logoSWS.png" />
+        </div>
+        <h2 class="text-center">Bienvenido a SWS</h2>
+        <div class="row padding">
+          <p>Para comenzar a utilizar las funciones adicionales en esta aplicación, debe identificarse. Por favor ingrese su usuario y contraseña.</p>
+        </div>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">Username</span>
+            <input type="text" ng-model="loginData.username">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" ng-model="loginData.password">
+          </label>
+          <div class="padding-top">
+            <button class="button button-block button-calm" ng-click="login()">Iniciar Sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

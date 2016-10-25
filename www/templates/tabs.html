@@ -1,0 +1,35 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <!-- Dashboard Tab -->
+  <ion-tab ng-if="$root.showTabs.usuario" title="Perfil" icon-off="ion-person" icon-on="ion-person" ng-click="goTo('tab.usuario')">
+    <ion-nav-view name="tab-usuario"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Dashboard Tab -->
+  <ion-tab ng-if="$root.showTabs.vehiculo" title="Vehículos" icon-off="ion-model-s" icon-on="ion-model-s" ng-click="goTo('tab.vehiculos')">
+    <ion-nav-view name="tab-vehiculos"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Dashboard Tab -->
+  <ion-tab ng-if="$root.showTabs.cita" title="Citas" icon-off="ion-android-calendar" icon-on="ion-android-calendar" ng-click="goTo('tab.cita')">
+    <ion-nav-view name="tab-cita"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab hidden="true" href="#/tab/login">
+    <ion-nav-view name="tab-login"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab hidden="true" href="#/tab/detalleVehiculo">
+    <ion-nav-view name="tab-detalleVehiculo"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab hidden="true" href="#/tab/detalleTrabajo">
+    <ion-nav-view name="tab-detalleTrabajo"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
