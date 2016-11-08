@@ -1,6 +1,5 @@
 <ion-view view-title="Detalle del Vehículo">
   <ion-content>
-    <ion-list>
 
       <div class="row">
         <div class="col col-40 text-center">
@@ -12,17 +11,19 @@
               <p><span class="text-bold">Año: </span> <br>2016</p>
               <p><span class="text-bold">Placa: </span> <br>291425</p>
             </div>
-            <div class="col">
+            <div class="col padding-left">
               <p><span class="text-bold">Marca: </span> <br>MITSUBISHI</p>
               <p><span class="text-bold">Modelo: </span> <br>MIRAGE GLS MT</p>
             </div>
           </div>
         </div>
       </div>
+      <button class="button button-positive button-block" ng-click="GetAllClient()">Solicitar</button>
+      <button class="icon-left ion-calendar button button-block  button-positive">
+        <p>Citas Pendientes</p>
+      </button>
 
-      <div class="item item-divider">Trabajos Realizados</div>
-
-      <div class="list text-center">
+      <!-- <div class="list text-center">
         <div class="row row-center card row-wait">
           <div class="col padding-left">
             <p><span class="text-bold">Fecha de ingreso: </span> <br>2016-01-04</p>
@@ -73,6 +74,21 @@
           </div>
         </div>
       </div>
-    </ion-list>
+
+      <div class="item item-divider">Citas Pendientes</div>
+
+      <div class="list">
+      <div class="row row-center card row-wait">
+        <div class="col padding-left">
+          <p><span class="text-bold">Sucursal </span> <br>Curridabat</p>
+        </div>
+        <div class="col">
+          <p><span class="text-bold">Fecha: </span> <br>30-10-16</p>
+        </div>
+        <div class="col">
+          <p><span class="text-bold">Hora: </span> <br>2:30 p.m</p>
+        </div>
+      </div>
+      </div> -->
   </ion-content>
 </ion-view>

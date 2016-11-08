@@ -97,6 +97,16 @@ angular.module('starter',
       }
     })
 
+    .state('tab.historico', {
+      url: '/historico',
+      views: {
+        'tab-historico': {
+          templateUrl: 'templates/historico.html',
+          controller: 'AppCtrl'
+        }
+      }
+    })
+
     .state('tab.login', {
       url: '/login',
       views: {

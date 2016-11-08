@@ -13,6 +13,11 @@ angular.module('starter.controllers', [])
       AppService.logout();
     };
 
+    $scope.GetAllClient = function (){
+      debugger;
+      var result = AppService.getDataTest();
+    }
+
     $scope.nextStage = function ( stage ) {
       var go2Screen = null;
       switch ( stage ){
@@ -42,5 +47,8 @@ angular.module('starter.controllers', [])
         AppService.showMessage( 'Información errónea', 'Su usuario y/o contraseña son incorrectos, por favor intente de nuevo.' );
       }
     };
+
+   
+
   });
 

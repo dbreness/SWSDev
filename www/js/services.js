@@ -1,5 +1,5 @@
 angular.module('starter.services', [])
-  .factory('AppService', function( $rootScope, $state, $ionicPopup ) {
+  .factory('AppService', function( $rootScope, $state, $ionicPopup, $http ) {
     AppService =  {
       tabList : {},
       init: function () {
@@ -19,6 +19,9 @@ angular.module('starter.services', [])
       getTabList: function () {
         return AppService.tabList;
       },
+      getDataTest : function () {  
+        return $http.get("http://localhost:8099/WCF_SWS.Service1.svc/obtenerClientes");  
+    },
       setTabList: function ( pTabList ) {
         AppService.tabList = pTabList;
       },

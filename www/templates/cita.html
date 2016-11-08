@@ -1,17 +1,12 @@
 <ion-view view-title="Citas">
   <ion-content class="padding">
     <form id="solicitarCita-form2" class="list">
-      <label class="item item-input">
-        <span class="input-label">Fecha</span>
-        <input type="date" placeholder="Fecha Ingreso" class="text-center">
+    <label class="item item-input">
+        <ion-toggle toggle-class="toggle-positive"><span class="text-bold input-label">Sucursal predefinida</span></ion-toggle>
       </label>
-      <label class="item item-input">
-        <span class="input-label">Hora</span>
-        <input type="time" placeholder="">
-      </label>
-      <ion-toggle toggle-class="toggle-positive" id="solicitarCita-toggle3">Sucursal Predefinida</ion-toggle>
-      <label class="item item-select" id="solicitarCita-select1">
-        <span class="input-label">Sucursal</span>
+
+    <label class="item item-select" id="solicitarCita-select1">
+        <span class="text-bold input-label">Sucursal</span>
         <select>
           <option>Sucursal 1</option>
           <option>Sucursal 2</option>
@@ -19,14 +14,22 @@
         </select>
       </label>
       <label class="item item-select" id="solicitarCita-select2">
-        <span class="input-label">Vehículo</span>
+        <span class="input-label text-bold">Vehículo</span>
         <select>
           <option>Vehículo 1</option>
           <option>Vehículo 2</option>
           <option>Vehículo 3</option>
         </select>
       </label>
+      <label class="item item-input">
+        <span class=" text-bold input-label">Fecha</span>
+        <input type="date" placeholder="Fecha Ingreso" class="text-center">
+      </label>
+      <label class="item item-input">
+        <span class="text-bold input-label">Hora</span>
+        <input type="time" placeholder="">
+      </label>
     </form>
-    <button id="solicitarCita-button1" class="button button-positive  button-block">Solicitar</button>
+    <button class="button button-positive button-block">Solicitar</button>
   </ion-content>
 </ion-view>
